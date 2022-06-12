@@ -1,0 +1,274 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local MiningSimulator2script = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextBox_2 = Instance.new("TextBox")
+local UICorner_4 = Instance.new("UICorner")
+local Ezpet = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+local Blackline = Instance.new("Frame")
+
+--Properties:
+
+Frame.Parent = game.StarterGui.ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.392727196, 0, 0.251548946, 0)
+Frame.Size = UDim2.new(0, 525, 0, 341)
+
+UICorner.CornerRadius = UDim.new(0, 30)
+UICorner.Parent = Frame
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(2.32514878e-07, 0, 0.184750736, 0)
+ScrollingFrame.Size = UDim2.new(0, 524, 0, 270)
+
+TextLabel.Parent = ScrollingFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0.278091609, 0, 0.183638752, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Sarpanch
+TextLabel.Text = "More coming soon"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextBox.Parent = ScrollingFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(186, 186, 186)
+TextBox.Position = UDim2.new(0.588567793, 0, 0.0855618119, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.Roboto
+TextBox.Text = "Paste here KEY if needed"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_2.Parent = TextBox
+
+MiningSimulator2script.Name = "Mining Simulator 2 script"
+MiningSimulator2script.Parent = ScrollingFrame
+MiningSimulator2script.BackgroundColor3 = Color3.fromRGB(186, 186, 186)
+MiningSimulator2script.Position = UDim2.new(-3.63739673e-06, 0, 0.086616531, 0)
+MiningSimulator2script.Size = UDim2.new(0, 173, 0, 50)
+MiningSimulator2script.Font = Enum.Font.Roboto
+MiningSimulator2script.Text = "Mining Simulator 2"
+MiningSimulator2script.TextColor3 = Color3.fromRGB(0, 0, 0)
+MiningSimulator2script.TextScaled = true
+MiningSimulator2script.TextSize = 14.000
+MiningSimulator2script.TextWrapped = true
+MiningSimulator2script.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
+end)
+
+UICorner_3.Parent = MiningSimulator2script
+
+TextBox_2.Parent = ScrollingFrame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(186, 186, 186)
+TextBox_2.Position = UDim2.new(0.590476215, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0, 200, 0, 50)
+TextBox_2.Font = Enum.Font.Roboto
+TextBox_2.Text = "Paste here KEY if needed"
+TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+
+UICorner_4.Parent = TextBox_2
+
+Ezpet.Name = "Ez pet"
+Ezpet.Parent = ScrollingFrame
+Ezpet.BackgroundColor3 = Color3.fromRGB(186, 186, 186)
+Ezpet.Size = UDim2.new(0, 173, 0, 50)
+Ezpet.Font = Enum.Font.SourceSans
+Ezpet.Text = "EZ PET!"
+Ezpet.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ezpet.TextScaled = true
+Ezpet.TextSize = 14.000
+Ezpet.TextWrapped = true
+Ezpet.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua", true))()
+end)
+
+UICorner_5.Parent = Ezpet
+
+TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.Position = UDim2.new(0.00954198465, 0, 0.249864638, 0)
+TextLabel_2.Size = UDim2.new(0, 503, 0, 38)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Press B to open and n to close"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_6.Parent = TextLabel_2
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.00242425688, 0, -0.00440791529, 0)
+Title.Size = UDim2.new(0, 525, 0, 50)
+Title.Font = Enum.Font.Roboto
+Title.Text = "Game Scripter"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextSize = 20.000
+
+Credit.Name = "Credit"
+Credit.Parent = Frame
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.Position = UDim2.new(0.695757568, 0, -0.000236213207, 0)
+Credit.Size = UDim2.new(0, 158, 0, 49)
+Credit.Font = Enum.Font.Roboto
+Credit.Text = "Made By: Luffy for Ezzo"
+Credit.TextColor3 = Color3.fromRGB(255, 0, 0)
+Credit.TextSize = 17.000
+Credit.TextWrapped = true
+
+Blackline.Name = "Black line"
+Blackline.Parent = Frame
+Blackline.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blackline.Position = UDim2.new(-0.000346392393, 0, 0.120372683, 0)
+Blackline.Size = UDim2.new(0, 525, 0, 14)
+
+-- Scripts:
+
+local function LZFAYDT_fake_script() -- MiningSimulator2script.Hover Animation 
+	local script = Instance.new('LocalScript', MiningSimulator2script)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Rotation = 3
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Rotation = 0
+	end)
+end
+coroutine.wrap(LZFAYDT_fake_script)()
+local function PQDVOO_fake_script() -- Ezpet.Hover Animation 
+	local script = Instance.new('LocalScript', Ezpet)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Rotation = 3
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Rotation = 0
+	end)
+end
+coroutine.wrap(PQDVOO_fake_script)()
+local function TGDKSOO_fake_script() -- Frame.Draggabke 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.25
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+end
+coroutine.wrap(TGDKSOO_fake_script)()
+local function VVOT_fake_script() -- Frame.Keybind 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "b" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "n" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(VVOT_fake_script)()
